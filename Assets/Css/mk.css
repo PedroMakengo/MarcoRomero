@@ -1,0 +1,175 @@
+@font-face {
+    font-family: Qanela_Soft;
+    src: url(../Fonts/Radomir\ Tinkov\ \ QanelasSoftRegular.otf);
+}
+*,
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Qanela_Soft;
+    font-weight: 100;
+    background-image: url(../Img/Banners/fundo0.svg);
+    background-size: 100%;
+}
+
+a {
+    color: #fff;
+}
+
+.navegacaoHeader ul {
+    list-style: none;
+}
+
+.navegacaoHeader ul li {
+    display: inline-block;
+}
+
+.navegacaoHeader ul li a {
+    display: block;
+    padding: 20px 20px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.navegacaoHeader ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navegacaoHeader ul li a.active {
+    /* color: #7DBA5C; */
+    /* border-bottom: 4px solid #7DBA5C; */
+    border-bottom: 4px solid #fff;
+    -moz-border-bottom: 4px solid #fff;
+    -webkit-border-bottom: 4px solid #fff;
+    color: #fff;
+    opacity: 1;
+}
+
+.redesSocias {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 30px;
+}
+.redesSocias ul {
+    list-style: none;
+}
+.redesSocias ul li {
+    display: inline-block;
+}
+.redesSocias ul li a,
+.redesSocias ul li a i{
+    opacity: 0.8 !important;
+}
+
+.redesSocias ul li a i {
+    color: #008EC5 !important;
+    position: relative;
+    top: 2px;
+}
+
+.pageHome {
+    padding: 25px 0;
+}
+.tituloUsuario {
+    padding: 200px 0;
+}
+
+.pageHome .bordaUsuario{
+    width: 500px;
+    height: 500px;
+    background: #ffffff93;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    position: relative;
+    top: 40px;
+}
+
+
+/* Page Sobre */
+
+.pageSobre {
+    padding: 50px 0;
+}
+
+.pageSobre .bordaPerfilUsuario {
+    width: 150px;
+    height: 150px;
+    border-radius: 37% 63% 48% 52% / 31% 41% 59% 69%;
+    background: #ffffff93;
+}
+
+
+/* Page Curriculo */
+.pageCurriculo {
+    padding: 50px 0;
+}
+
+/* Page Portfolio */
+.pagePortfolio img {
+    height: 260px;
+    width: 100%;
+}
+/* Page Contactos */
+.pageContactos {
+    padding: 30px 0;
+}
+
+.pageContactos label {
+    color: #fff !important;
+}
+
+.bordaContactoIcons {
+    width: 400px;
+    height: 400px;
+    border-radius: 52% 48% 48% 52% / 30% 36% 64% 70%;
+    background: #ffffff93;
+    text-align: center;
+    float: right;
+}
+
+/* BgPadrao */
+.bgPadrao {
+    background: #008DC8;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    border: 2px solid #fff !important;
+    background: transparent !important;
+    color: #fff !important;
+}
+
+/* Preloader */
+.preloader {
+    background: linear-gradient(0deg
+,#010101e6,#010101e6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 110px;
+    height: 100% !important;
+    top: 40%;
+}
+.lds-ellipsis img {
+    position: relative !important;
+    top: 50vh !important;
+    width: 50px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
