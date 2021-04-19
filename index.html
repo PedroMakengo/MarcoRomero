@@ -29,12 +29,17 @@
                     <div class="col-lg-9 text-right">
                         <nav class="navegacaoHeader">
                             <ul>
-                                <li><a href="#" class="active navItem"><i class="fas fa-home"></i> Home</a></li>
-                                <li><a href="#" class=" navItem"><i class="fas fa-user"></i> Sobre</a></li>
-                                <li><a href="#" class=" navItem"><i class="fas fa-file"></i> Currículo</a></li>
-                                <li><a href="#" class=" navItem"><i class="fas fa-address-book"></i> Portfolio</a></li>
-                                <li><a href="#" class=" navItem"><i class="fas fa-envelope"></i> Contacto</a></li>
-                                <li><a href="#" class=" navItem"><i class="fab fa-blogger-b"></i> Blog</a></li>
+                                <li><a href="#" class="active navItem" id="home"><i class="fas fa-home"></i> Home</a>
+                                </li>
+                                <li><a href="#" class="navItem" id="sobre"><i class="fas fa-user"></i> Sobre</a></li>
+                                <li><a href="#" class="navItem" id="curriculo"><i class="fas fa-file"></i>
+                                        Currículo</a></li>
+                                <li><a href="#" class="navItem" id="portfolio"><i class="fas fa-address-book"></i>
+                                        Portfolio</a></li>
+                                <li><a href="#" class="navItem" id="contacto"><i class="fas fa-envelope"></i>
+                                        Contacto</a></li>
+                                <li><a href="#" class="navItem" id="blog"><i class="fab fa-blogger-b"></i> Blog</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -43,7 +48,7 @@
         </header>
 
         <!-- SECTION HOME -->
-        <section class="pageHome" style="display: block">
+        <section class="pageHome dsActivo home">
             <div class="container animated bounceIn">
                 <div class="row">
                     <div class="col-lg-5">
@@ -56,9 +61,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-7 text-right">
+                    <div class="col-lg-7 text-right animated bounceInRight slower">
                         <div class="bordaUsuario text-center float-right">
-                            <img src="Assets/Img/My/marco1.jpg" style="width: 50%; position: relative; top: 90px" />
+                            <img src="Assets/Img/My/marco1.png"
+                                style="width: 62%; left: -40px; position: relative; top: 20px" />
                         </div>
                     </div>
                 </div>
@@ -67,13 +73,13 @@
         <!-- END SECTION HOME -->
 
         <!-- SECTION SOBRE -->
-        <section class="pageSobre" style="display: none">
-            <div class="container">
+        <section class="pageSobre dsNone sobre">
+            <div class="container animated bounceInRight slower">
                 <div class="row">
 
                     <div class="col-lg-6">
                         <div class="bordaPerfilUsuario text-center">
-                            <img src="Assets/Img/My/marco1.jpg" style="width: 50%; position: relative; top: 20px" />
+                            <img src="Assets/Img/My/marco1.png" style="width: 50%; position: relative; top: 20px" />
                         </div>
                         <div class="mt-4">
                             <h1 class="h4 text-white">
@@ -352,14 +358,14 @@
         <!-- END SOBRE -->
 
         <!-- CURRICULO -->
-        <section class="pageCurriculo" style="display: none">
-            <div class="container">
+        <section class="pageCurriculo dsNone curriculo">
+            <div class="container animated bounceInRight slower" id="sessaoEducacao">
                 <div class="row mb-4">
                     <div class="col-lg-6">
                         <h1 class="text-white h4"><strong>Educação</strong></h1>
                     </div>
                     <div class="col-lg-6 text-right">
-                        <span class="text-white btn btn-sm btn-primary rounded-0">
+                        <span id="btnProfissional" class="text-white btn btn-sm btn-primary rounded-0">
                             Experiência Profissional <i class="fas fa-arrow-right"></i>
                         </span>
                     </div>
@@ -475,18 +481,90 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <div class="container" id="sessaoProfissional" style="display: none;">
+                <div class="row mb-4">
+                    <div class="col-lg-6">
+                        <h1 class="text-white h4"><strong>Experiência Profissional</strong></h1>
+                    </div>
+                    <div class="col-lg-6 text-right">
+                        <span id="btnEducacao" class="text-white btn btn-sm btn-primary rounded-0">
+                            <i class="fas fa-arrow-left"></i> Educação
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 mt-2">
+                        <div class="border p-2 bg-white shadow">
+                            <h1 class="h6 text-dark">Especialista de Navegação e Balística de Satélites - ANGOSAT
+                            </h1>
+                            <div class="row">
+                                <div class="col-lg-10">
+                                    <small>Gabinete de Gestão do Programa Espacial Nacional</small>
+                                </div>
+                                <div class="col-lg-2 text-right">
+                                    <span class="btn btn-primary btn-sm rounded-0">?</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-2">
+                        <div class="border p-2 bg-white shadow">
+                            <h1 class="h6 text-dark">Oficial para o sistemas hidráulicos da Brigada de Manutenção
+                                Técnica Aeronáutica - Direcção de Armamento e Técnica</h1>
+                            <div class="row">
+                                <div class="col-lg-10">
+                                    <small>Força Aérea Nacional</small>
+                                </div>
+                                <div class="col-lg-2 text-right">
+                                    <span class="btn btn-primary btn-sm rounded-0">?</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-2">
+                        <div class="border p-2 bg-white shadow">
+                            <h1 class="h6 text-dark">Implementação de Ensaios Laboratoriais não destrutivos
+                                para Força Aérea Nacional
+                            </h1>
+                            <div class="row">
+                                <div class="col-lg-10">
+                                    <small>Aerospace Valley França</small>
+                                </div>
+                                <div class="col-lg-2 text-right">
+                                    <span class="btn btn-primary btn-sm rounded-0">?</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-2">
+                        <div class="border p-2 bg-white shadow">
+                            <h1 class="h6 text-dark">Costumer System Engineering - Nano Tecnologia Espacial
+                            </h1>
+                            <div class="row">
+                                <div class="col-lg-10">
+                                    <small>Airbus Defense and Space</small>
+                                </div>
+                                <div class="col-lg-2 text-right">
+                                    <span class="btn btn-primary btn-sm rounded-0">?</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- END CURRICULO -->
 
         <!-- PORTFOLIO -->
-        <section class="pagePortfolio" style="display: none">
-            <div class="container">
+        <section class="pagePortfolio dsNone portfolio">
+            <div class="container animated bounceInRight slower">
                 <div class="row mt-4">
                     <div class="col-lg-4">
-                        <a href="Assets/Img/My/marco3.jpg" class="shadow media-1" data-fancybox="gallery">
-                            <img src="Assets/Img/My/marco3.jpg" alt="Image" class="img-fluid">
+                        <a href="Assets/Img/My/1.jpg" class="shadow media-1" data-fancybox="gallery">
+                            <img src="Assets/Img/My/1.jpg" alt="Image" class="img-fluid">
                             <div class="media-1-content">
                                 <h1 class="h4 text-white">
                                     <strong>Marco Romero</strong>
@@ -498,8 +576,8 @@
                         </a>
                     </div>
                     <div class="col-lg-4">
-                        <a href="Assets/Img/My/marco3.jpg" class="shadow media-1" data-fancybox="gallery">
-                            <img src="Assets/Img/My/marco3.jpg" alt="Image" class="img-fluid">
+                        <a href="Assets/Img/My/2.jpg" class="shadow media-1" data-fancybox="gallery">
+                            <img src="Assets/Img/My/2.jpg" alt="Image" class="img-fluid">
                             <div class="media-1-content">
                                 <h1 class="h4 text-white">
                                     <strong>Marco Romero</strong>
@@ -570,7 +648,7 @@
         <!-- END PORTFOLIO -->
 
         <!-- CONTACTOS -->
-        <section class="pageContactos" style="display: none">
+        <section class="pageContactos dsNone contacto">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -580,7 +658,7 @@
                 </div>
                 <div class="row">
 
-                    <div class="col-lg-7">
+                    <div class="col-lg-7 animated fadeInRight slower">
                         <form method="POST" class="mt-4">
                             <div class="row">
                                 <div class="col-lg-6 form-group">
@@ -626,7 +704,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-5 text-right">
+                    <div class="col-lg-5 text-right animated bounceInRight slow">
                         <div class="bordaContactoIcons">
                             <img src="Assets/Img/Icons/i3.svg" class="mt-4" style="width: 80%" />
                         </div>

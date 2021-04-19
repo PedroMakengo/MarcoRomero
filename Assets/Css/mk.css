@@ -147,6 +147,13 @@ textarea {
     color: #fff !important;
 }
 
+.dsActivo {
+    display: block;
+}
+.dsNone {
+    display: none;
+}
+
 /* Preloader */
 .preloader {
     background: linear-gradient(0deg
